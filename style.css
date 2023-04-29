@@ -19,22 +19,26 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-content: center;
-    border-bottom: 3px solid black;
+    border-bottom: 2px solid black;
     flex-wrap: wrap;
 }
 
 .menu-link {
     text-decoration: none;
-    font-size: 2em;
+    font-size: 16px;
     text-transform: uppercase;
     font-weight: 800;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Unbounded', sans-serif;
     color: white;
     background: black;
-}
+    transition: background-color 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 10px;    
+    opacity: 0.5;
+}    
 
 .menu-item {
-    height: 3em;
+    height: 2em;
     align-self: center;
     margin: 5px;
 }
@@ -42,20 +46,34 @@ body {
 .title-wrapper {
     margin: 0;
     background: #00ad03;
-    border-bottom: 3px solid black;
+    border-bottom: 2px solid black;
 }
 
 .title {
     margin: 0;
     width: 90%;
     font-weight: 600;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Unbounded', sans-serif;
     font-style: italic;
     color: black;
     text-transform: uppercase;
-    font-size: 3em;
+    font-size: 1em;
     text-align: center;
-    transition: color 1s
+    transition: color 1s, transform 1s ease;
+    transform: rotate(360deg);   
+}
+
+.title:hover {
+    color: #00ad03;
+    transform: scale(1.2);    
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
 }
 
 .image {
@@ -64,11 +82,73 @@ body {
     height: auto;
 }
 
-.title:hover {
-    color: #00ad03;    
+.image img {
+    width: 25%;
+    max-width: 80px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: block;
+    margin: 0;
+    z-index: 0;
+}
+
+.content {
+    font-family: 'Unbounded', sans-serif;
+    max-width: 800px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.content h2 {
+    position: relative;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.content p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.button {
+    display: inline-block;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Unbounded', sans-serif;
+    color: black;
+    background-color: #00ad03;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    animation: move 1s infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.button:hover {
+    background-color: #009f02;
+    animation: none;
 }
 
 .menu-link:hover {
     color: #00ad03;
     font-size: 2.5em;
+    transform: scale(1.1);
+    opacity: 1;
 }
