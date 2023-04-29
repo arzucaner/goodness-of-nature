@@ -4,12 +4,7 @@
 ---
 
 
-## "Goodness of Nature" is a webpage that was created as a practice project for the 
-"Push Your Imagination with CSS Animation" event held on the evening of April 27th, 2023.
-The HTML code used to create the webpage includes a doctype declaration and sets the language to English. 
-The meta tags define the character set, compatibility mode, and viewport. 
-Additionally, the code includes a link to the Google Fonts API and an external CSS file named style.css. 
-The title of the webpage is "Goodness of Nature".
+## "Goodness of Nature" is a webpage that was created as a practice project for the "Push Your Imagination with CSS Animation" event held on the evening of April 27th, 2023. The HTML code used to create the webpage includes a doctype declaration and sets the language to English. The meta tags define the character set, compatibility mode, and viewport. Additionally, the code includes a link to the Google Fonts API and an external CSS file named style.css. The title of the webpage is "Goodness of Nature".
 
 
 ---
