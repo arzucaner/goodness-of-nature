@@ -20,7 +20,7 @@
 ---
 
 
-### Installation and Usage
+## Installation and Usage
 
 After downloading the project files, simply open the index.html file in a browser to view the web page. Alternatively, you can go to https://fastidious-cascaron-b161bc.netlify.app/ to view the web page live.
 
@@ -31,6 +31,13 @@ After downloading the project files, simply open the index.html file in a browse
 ## Contributing
 
 If you would like to contribute, please open an issue to start a discussion about the topic first. Then you can contribute by sending a pull request.
+
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for more information.
 
 
 ---
